@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNGSuite">
+<parameter name="username" value="pabhishekraj@gmail.com"/>
+<parameter name="password" value="Anurag@41289"/>
+<parameter name="url" value="http://live.guru99.com/"/>
+ <listeners> 
+        <listener class-name="sampletests.Listeners"/>
+</listeners>
+          
+  <test thread-count="5" name="VerifyingBasicFunctionality">
+    <classes>
+   	  <class name="sampletests.testNG_Navigate"/>
+      <class name="sampletests.testNG_CreateNewAccount"/>
+      <class name="sampletests.testNG_VerifyAccount"/>
+      <class name="sampletests.testNG_EndToEnd"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
